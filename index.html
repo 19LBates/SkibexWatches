@@ -19,7 +19,9 @@
 <!--LINKS-->
 <div id="links">
 <a href="index.html">Home</a>
-<a href="https://kes.net">‎Credits‎</a>
+<a href="gold.html">Gold</a>
+<a href="swiss.html">Swiss</a>
+<a href="diamond.html">Diamond</a>
 </div>
 
 <br><br>
@@ -95,6 +97,23 @@ From £24,000
 <li>Having our watches standing out of the mundane crowd</li>
 </ol>
 </div>
+
+<br><br>
+
+<!--TRIVIA-->
+<h3>Trivia</h3>
+<div id="q1" class="quiz">Question: How many watches are produced each year? <button onClick = "showAnswer('q1', 'Approximately 1.2 billion.');">Show Answer</button></div>
+<div id="q2" class="quiz">Question: Approximately how much does a watch weigh? <button onClick = "showAnswer('q2', 'Ranging between 70 and 120 grams.');">Show Answer</button></div>
+<div id="q3" class="quiz">Question: What is the most deluxe brand of watches? <button onClick = "showAnswer('q3', 'Skibex Watches.');">Show Answer</button></div>
+<br><br>
+
+
+<script>
+function showAnswer(divName, ans) {
+	document.getElementById(divName).innerHTML = "Answer: " + ans;
+}
+</script>
+
 
 
 </body>

@@ -17,7 +17,9 @@
 <!--LINKS-->
 <div id="links">
 <a href="index.html">Home</a>
-<a href="https://kes.net">‎Credits‎</a>
+<a href="gold.html">Gold</a>
+<a href="swiss.html">Swiss</a>
+<a href="diamond.html">Diamond</a>
 </div>
 
 <h2>Gold Range</h2>
@@ -44,9 +46,31 @@ Our gold range is perchance the most pure <b>in the <i><u>world</u></i></b>.
 Our renowned golden watch, known for its price and bright glow.
 <br><br>
 £12,322.67
+</div>
+
+</div>
+
+<!--TRIVIA-->
+<h3>Trivia</h3>
+<div id="q1" class="quiz"><form name = "form">
+Question: What is the chemical symbol for Gold? <input type="text" id="ansInput"></input><br>
+<button onClick = "checkAnswer('q1', 'The chemical symbol for Gold is Au.', 'Au');">Check Answer</button>
+</form></div>
+
+<script>
+function checkAnswer(divName, ans, correctAnswer) {
+	var inputAnswer = document.forms["form"]["ansInput"].value;
+	document.getElementById(divName).innerHTML = "<b>Answer: " + ans + "</b>";
+	if (inputAnswer == correctAnswer) {
+		document.getElementById(divName).style.color = "#22dd66";
+	}
+	else {
+		document.getElementById(divName).style.color = "#ff3344";
+	}
+}
+</script>
 
 <br><br><br>
-</div>
-</div>
+
 </body>
 </html>
